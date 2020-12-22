@@ -1,0 +1,96 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+    background-image: url("https://time.com/wp-content/uploads/2017/10/229-westerlund-21.jpg?w=2000");
+}    
+
+.myNavbar {
+    padding: 10px;
+    border-bottom: violet solid 5px;
+    width: 100%;
+}
+.nav-item {
+    text-align: right;
+}
+#mySpan {
+    color: violet;
+    margin-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.contentContainer {
+    background: rgb(231, 166, 240);
+    margin: 20px 15px 20px 15px;
+    padding:30px;
+    border: slateblue solid 5px;
+    width: auto;
+   
+
+}
+
+.containerHeader {
+    color:slateblue;
+    font-family:'Times New Roman', Times, serif;
+     
+}
+
+.containerHeader h1 {
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: 64px;
+}
+
+.formInfo
+ {
+    margin-left:15px;
+    margin-right: 90px;
+    margin-top: 5px;
+}
+.submitButton{
+    background-color: slateblue;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+#sethPhoto {
+    max-width: 60%;
+    max-height: 60%;
+    float: left;
+    margin-right: 10px;
+}
+
+#portfolioPics {
+    max-width: 80%;
+    max-height: 80%; 
+    margin: 10px 15px 10px 15px;
+}
+
+h3 {
+    color:slateblue;
+    margin-left: 15px;
+}
+.getAtMe {
+    color: rgb(11, 3, 65);
+    margin-left: 15px;
+
+}
+
+footer {
+    line-height: 50px;
+    color: violet;
+    background-color: rgb(22, 39, 39);
+    text-align:center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top:violet 5px solid;
+}
