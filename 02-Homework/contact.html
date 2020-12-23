@@ -7,24 +7,31 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous'>
     <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!--above scripts borrowed from Bootstrap-->
 
 </head>
 <body>
-  <main>
-    <nav class="navbar navbar-expand-lg navbar-collapse-md navbar-collapse-sm navbar-collapse-xs navbar-dark bg-dark myNavbar">
-        <span class="navbar-brand mb-1 h1 mySpan" id="mySpan">Seth Zygarlicke</span>
+   <!--Started with following navbar. I have it at "navbar-expand" for large screens, so you can see the listed items written out
+      but for md and sm screens, I had to add the "navbar-collapse". I also added my own class, "myNavbar" to further customize it in CSS -->
+    <nav class="navbar navbar-expand-lg navbar-collapse-md navbar-collapse-sm navbar-dark bg-dark myNavbar">
+
+        <span class="navbar-brand mb-1 h1 mySpan" id="mySpan">Seth Zygarlicke</span> <!--Added "mySpan" id to Customize text further in CSS-->
+
+        <!--This text is just straight from Bootstrap. No modifications required. It dictates the collapse button that shows up when the screen size is md or smaller.-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!--This is coding for the listed, collapsable links in the Navbar-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav navbar-right ml-auto"> <!--ml-auto = right align in navbar-->
+            <ul class="nav navbar-nav navbar-right ml-auto"> <!--Had to switch to ml-auto in order to right align the list in the navbar-->
               <li class="nav-item">
-                <a class="nav-link" href="#"><strong>Contact</strong></a>
+                <a class="nav-link" href="#"><strong>Contact</strong></a>  <!--Bolded this item to indicate that it is the currently selected page. 
+                                                                            Its link is a # so it will return right to this page-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>  <!--I made links for these navigation items to other pages in this repository-->
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html">About</a>
@@ -32,20 +39,36 @@
             </ul>
         </div>
     </nav>
+    <br> <!--Added empty spaces to create space between Navbar and main content-->
     <br>
     <br>
+
+    
+   <!--In order to closely replicate the sample images, I decided to make the whole page one row, then divide it up into columns based on the screen size
+      as indicated below. So for lg screens, I created one column that's 75% of the screen (col-lg-8) that contains the main container of the page, 
+      and the other 25% column being empty space. For md screens, I again had two columns, the one with the container being 67% of the page (col-md-9), 
+      while the empty column is 33%. For small screens, I had the column take up the entire width of the screen (col-sm-12)  -->
    <div class="row">
       <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+
+        <!--This is the container that holds the main content of this page. I added my own class "contentContainer" to customize further in CSS.-->
         <div class="container contentContainer">
+          <!--This is the first row in my main container, which holds only my header. Added another class 'containerHeader' in order to customize my header text-->
           <div class="row containerHeader">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <!--I had this column take up the entire width of container on all screen sizes.-->
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <h1><strong>Contact</strong></h1>
             
             </div>
           </div>
-          <hr>
+          <hr> <!--This line helps separate the header from the following content.-->
+
+          <!--This is my second row in the container, again consisting of only one column on all screen sizes.-->
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+              <!--The following code is borrowed from Bootstrap in the Forms section. I altered them just slightly to have the relevant text
+                as given in the sample Contact photos.-->
               <form class="formInfo">
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Name</label>
@@ -59,28 +82,30 @@
                   <label for="exampleFormControlTextarea1">Message</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
                 </div>
+              </form>
             </div>
           </div>
-          <br>
+          <br> <!--Created some space between my form and the Submit button.-->
+
+          <!--Placed the Submit button in its own row, in a column spanning the entire width on all screens.-->
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <button type="button" class="btn btn-primary btn-lg submitButton">Submit</button>
-                
-            <div class="col-md-4 col-sm-3">
-        </div>
-        
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+              <!--The code for this button I once more borrowed from Bootstrap. I chose something large for visibility. Also added 
+                  my own class 'submitButton' to further customize in CSS.-->
+              <button type="button" class="btn btn-primary btn-lg submitButton">Submit</button>     
 
             </div>
         </div>
       </div>
       <br>
-      <br>
+      <br> <!--Some empty space to divide container from footer-->
       <br>
       <br>
     </div>
     
     
-  </main>
+  
   <footer>&#169;Copyright</footer>
 </body>
 

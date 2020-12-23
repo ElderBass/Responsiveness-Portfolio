@@ -16,45 +16,57 @@
 
         <span class="navbar-brand mb-1" id="mySpan">Seth Zygarlicke</span> <!--Added "mySpan" id to Customize text further in CSS-->
 
+        <!--This text is just straight from Bootstrap. No modifications required. It dictates the collapse button that shows up when the screen size is md or smaller.-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> <!--This text is just straight from Bootstrap. No modifications required. It dictates the collapse button 
-                                                           that shows up when the screen size is md or smaller.-->
+            <span class="navbar-toggler-icon"></span> 
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--This is coding for the listed, collapsable links in the Navbar-->
+        
+        <!--This is coding for the listed, collapsable links in the Navbar-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
             <ul class="nav navbar-nav navbar-right ml-auto"> <!--Had to switch to ml-auto in order to right align the list in the navbar-->
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>  <!--I made links for these navigation items to other pages in this repository-->
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><strong>About</strong></a>
+                <a class="nav-link" href="#"><strong>About</strong></a> <!--Bolded this item to indicate that it is the currently selected page. Its link is a # so it will return right to this page-->
               </li>
             </ul>
         </div>
     </nav>
+    <br> <!--Added empty spaces to create space between Navbar and main content-->
     <br>
     <br>
-    <div class="row">
+    <div class="row"> <!--In order to closely replicate the sample images, I decided to make the whole page one row, then divide it up into columns based on the screen size
+                            as indicated below. So for lg screens, I created one column that's 75% of the screen (col-lg-8) that contains the main container of the page, 
+                            and the other 25% column being empty space. For md screens, I again had two columns, the one with the container being 67% of the page (col-md-9), 
+                            while the empty column is 33%. For small screens, I had the column take up the entire width of the screen (col-sm-12)  -->
         <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
-            <div class="container contentContainer">
-                <div class="row containerHeader">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <!--This is the container that holds the main content of this page. I added my own class "contentContainer" to customize further in CSS.-->
+            <div class="container contentContainer"> 
+                <!--This is the first row in my main container, which holds only my header. Added another class 'containerHeader' in order to customize my header text-->
+                <div class="row containerHeader"> 
+                    <!--I had this column take up the entire width of container on all screen sizes.-->
+                    <div class="col-lg-12 col-md-12 col-sm-12"> 
                         <h1><strong>About Me</strong></h1>
                     </div>
                 </div>
-                <hr>
+                <hr> <!--This line helps separate the header from the following content.-->
+
+                <!--This is my second row in the container, again consisting of only one column on all screen sizes.-->
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--Started this information block of text with an image of myself, found in the myImages folder. Created an id for customization and a descriptive alt tag.-->
                         <img src="../02-Homework\Assets\Images\myImages\Photo-Of-Seth.png" id="sethPhoto" alt="Photo of Seth">
                         <p>Hello there! My name is Seth Zygarlicke and I am orginally from Grand Forks, ND, where I spent much of my formative years playing sports and vide games in equal measure.
                             I graduated from the University of North Dakota in 2013 with a BS in Mathematics before entering UND's School of Medicine and Health Sciences in 2014. I completed over two years
                             of this program before I was dismissed for reasons of conduct (looonng story). I moved to Fargo, ND during this period, working in the service industry as a server and bartender
                             before I made the move to Minneapolis, MN in 2018. I have been living and working here, wondering what to do myself, until I heard of this boot camp and pulled the trigger!
-                            <br> <br> <br>
+                            <br> <br> <br> <!--Empty space to break up blocks of text.-->
                             I LOVE being active. Running, biking, hiking, yoga, basketball, football, tennis...literally anything involving athletics and/or physical activity is my jam. Additionally, I love reading books
                             of almost all variety, including sci-si/fantasy, classic literature, academic nonfiction, and graphic novels. Another principle hobby of mine is playing video games. Currently I am grossly obsessed with Destiny 2, but I love most types of games. 
                             I also thoroughly enjoy select podcasts, usually of the heady, discussion-filled type (e.g. Sam Harris's 'Making Sense'). I am deeply interested in the universe's greatest mysteries, mainly the brain/consciousness, and quantum physics. 
@@ -64,25 +76,27 @@
                  
                 </div>
                 <hr>
-                <div class="row">
+                <!--This third row in the content container holds info/link for my three main social outlets. Bear in my I rarely use social media, but game HARD on Xbox One.-->
+                <div class="row"> <!--This row, again, contains one column spanning the entire width of the container on all screens.-->
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h3><strong>Get @ Me</strong></h3>
-                        <ul class="getAtMe">
-                            <li><strong>Twitter:</strong>   <a href="https://twitter.com/Elder_Bass">@Elder_Bass</a></li>
-                            <li><strong>Instagram:</strong>   <a href="https://www.instagram.com/zyggysmalls/">@zyggysmalls</a></li>
+                        <ul class="getAtMe"> <!--Added class 'getAtMe' to customize color for the following list.-->
+                            <li><strong>Twitter:</strong>   <a href="https://twitter.com/Elder_Bass" target="_blank">@Elder_Bass</a></li>
+                            <li><strong>Instagram:</strong>   <a href="https://www.instagram.com/zyggysmalls/" target="_blank">@zyggysmalls</a></li>
                             <li><strong>Xbox Gamer Tag:</strong>    Elder Bass</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <br>
+            <br> <!--Some empty space to divide container from footer-->
             <br>
             <br>
         </div>
     </div>
     
     
-    <footer>&#169;Copyright</footer>
+    <footer>&#169;Copyright</footer> <!-- the '&#169;' is the symbol for Copyright, as seen on the actual webpage.-->
 </body>
 
 </html>
