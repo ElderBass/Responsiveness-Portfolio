@@ -1,73 +1,89 @@
-* { /*This was part of our other homework sooo I kept it. I'm not entirely sure it needs to be here.*/
+* {
+    /*This was part of our other homework sooo I kept it. I'm not entirely sure it needs to be here.*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 body {
     /*I kept getting these horizontal scroll bars for some reason, and Google said this overflow-x: hidden; is how you get rid of them.*/
-    overflow-x: hidden; 
-     /*My background image for the body of my page, taken from the URL on the interwebz. */                   
+    overflow-x: hidden;
+    /*My background image for the body of my page, taken from the URL on the interwebz. */
     background-image: url("https://time.com/wp-content/uploads/2017/10/229-westerlund-21.jpg?w=2000");
-}    
+}
 
-.myNavbar { /*Extra styling for my Navbar. Added a bottom border line that matches the footer. */
+.myNavbar {
+    /*Extra styling for my Navbar. Added a bottom border line that matches the footer. */
     padding: 10px;
     border-bottom: violet solid 5px;
     width: 100%;
 }
-.nav-item { /*This class is for the list of items in my Navbar - Contact, About, and Portfolio. I just made sure
+
+.nav-item {
+    /*This class is for the list of items in my Navbar - Contact, About, and Portfolio. I just made sure
                 to align them on the right side when one opens the collapsed dropdown. */
     text-align: right;
 }
 
+
 /*This is the id I set for the span element in my Navbar. I styled it how I wanted it. */
+
 #mySpan {
     color: violet;
     margin-left: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 28px;
     font-weight: 900;
-    /*background-color: slateblue;*/  /*I understand the sample photos had a background color around my name, however I 
+    /*background-color: slateblue;*/
+    /*I understand the sample photos had a background color around my name, however I 
                                         personally thought that looked tacky so I omitted it. But I'm demonstrating I know the command.*/
 }
 
+
 /*The styling for my main content container in all of the different sites. */
+
 .contentContainer {
     background: rgb(231, 166, 240);
-    margin: 20px 15px 20px 15px;
-    padding:30px;
+    margin: 20px 15px 20px 20px;
+    padding: 30px;
     border: slateblue solid 5px;
-    width: auto; /*This in particular makes the container size scale with the size of the screen, always leaving
+    width: auto;
+    /*This in particular makes the container size scale with the size of the screen, always leaving
                     neat margins on the left and right sides of the screen. */
-   
-
 }
+
 
 /*The styling for my header in the main container.*/
+
 .containerHeader {
-    color:slateblue;
-    font-family:'Times New Roman', Times, serif;
-     
+    color: slateblue;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
 /*The styling for the particular h1 element in my container's header. Tried to adjust he margins to look
     as close as possible to the sample photos.*/
+
 .containerHeader h1 {
     margin-bottom: 0px;
     margin-left: 15px;
     font-size: 64px;
 }
 
+
 /*This is the Bootstrap class for my form inputs in the Contact page. I just messed with the margins to 
     most closesly resemble the sample images. */
-.formInfo
- {
-    margin-left:15px;
+
+.formInfo {
+    margin-left: 15px;
     margin-right: 90px;
     margin-top: 5px;
 }
 
+
 /*My class for the submit button on the Contact page. Formatted it how I wanted.*/
-.submitButton{
+
+.submitButton {
     background-color: slateblue;
     padding: 20px;
     color: white;
@@ -76,8 +92,10 @@ body {
     font-weight: 600;
 }
 
+
 /*The id I created for my About Me page. I had it float left so the text would wrap around it. 
     I set the max width/height at 60% so that the image would scale down with smaller screen sizes and fit the container.*/
+
 #sethPhoto {
     max-width: 60%;
     max-height: 60%;
@@ -85,36 +103,46 @@ body {
     margin-right: 10px;
 }
 
+#portfolio {
+    text-align: center;
+}
+
+
 /*The id I made for all of the pictures in my Portfolio page. I experimented with the max heights/widths to try and make
 the pictures look nice and orderly, and also scale with the container size. */
+
 #portfolioPics {
-    max-width: 90%;
-    max-height: 90%;
+    width: 90%;
     margin: 10px 15px 10px 15px;
 }
 
+
 /*The h3 tag inside my About Me page, third row, styled as desired.*/
+
 h3 {
-    color:slateblue;
+    color: slateblue;
     margin-left: 15px;
 }
 
+
 /*The class I made for my social media info, styled as desired. */
+
 .getAtMe {
     color: rgb(11, 3, 65);
     margin-left: 15px;
-
 }
 
+
 /*The footer, which I made "sticky" using the combination of position:fixed; left: 0; and bottom: 0; properties. */
+
 footer {
     line-height: 50px;
     color: violet;
     background-color: rgb(22, 39, 39);
-    text-align:center;
+    text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    border-top:violet 5px solid;
+    border-top: violet 5px solid;
 }
